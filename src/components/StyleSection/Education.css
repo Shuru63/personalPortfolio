@@ -1,0 +1,55 @@
+.education-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    align-items: center;
+  }
+  
+  .education-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1100px;
+    gap: 12px;
+  }
+  
+  @media (max-width: 960px) {
+    .education-wrapper {
+      flex-direction: column;
+    }
+  }
+  
+  .education-title {
+    font-size: 52px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 20px;
+    color: white; /* Use CSS variables for theming */
+  }
+  
+  @media (max-width: 768px) {
+    .education-title {
+      margin-top: 12px;
+      font-size: 32px;
+    }
+  }
+  
+  .education-desc {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 600;
+    color: rgb(182, 172, 172); 
+    margin-bottom: 40px;
+  }
+  
+  @media (max-width: 768px) {
+    .education-desc {
+      font-size: 16px;
+    }
+  }
+  

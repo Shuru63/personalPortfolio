@@ -1,0 +1,128 @@
+/* Navbar */
+.nav {
+    background-color: black;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    color: white;
+  }
+  
+  .navbar-container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+  }
+  
+  .nav-logo {
+    width: 80%;
+    padding: 0 6px;
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .nav-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    padding: 0 6px;
+    list-style: none;
+  }
+  
+  .nav-link {
+    color: var(--text-primary-color);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+  }
+  
+  .nav-link:hover {
+    color: var(--primary-color);
+  }
+  
+  .button-container {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 0 6px;
+  }
+  
+  .github-button {
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.6s ease-in-out;
+    text-decoration: none;
+  }
+  
+  .github-button:hover {
+    background: var(--primary-color);
+    color: var(--text-primary-color);
+  }
+  
+  /* Mobile */
+  .mobile-icon {
+    display: none;
+    color: var(--text-primary-color);
+  }
+  
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 16px;
+    padding: 12px 40px 24px 40px;
+    background: var(--card-light)99;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+  
+  .mobile-menu a {
+    color: var(--text-primary-color);
+    text-decoration: none;
+  }
+  
+  .hide-on-mobile {
+    display: none;
+  }
+  
+  /* Responsive */
+  @media screen and (max-width: 768px) {
+    .nav-items {
+      display: none;
+    }
+  
+    .mobile-icon {
+      display: block;
+    }
+  
+    .button-container {
+      display: none;
+    }
+  }
+  
