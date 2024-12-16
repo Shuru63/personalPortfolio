@@ -249,7 +249,7 @@ const Hero = () => {
                 <p className="email">Email : <a href="mailto:shubhamkumargarg57@gmail.com">shubhamkumargarg57@gmail.com</a></p>
               </motion.div>
               <ResumeButton href={Bio.resume} target="_blank">
-                Hire me
+                Check Resume
               </ResumeButton>
               
              

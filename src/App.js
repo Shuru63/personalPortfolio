@@ -1,5 +1,6 @@
 import styled, { ThemeProvider } from "styled-components";
 import { darkTheme } from "./utils/Themes";
+import { useEffect } from "react";
 import Navbar from "./components/Navbar";
 import { BrowserRouter } from "react-router-dom";
 import Hero from "./components/sections/Hero";
@@ -10,6 +11,7 @@ import StartCanvas from "./components/canvas/Stars";
 import Projects from "./components/sections/Projects";
 import Contact from "./components/sections/Contact";
 import Footer from "./components/sections/Footer";
+import ScrollToTop from "./components/sections/ScrollToTopButton";
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -35,6 +37,9 @@ const Wrapper = styled.div`
 `;
 
 function App() {
+  useEffect(() => {
+    window.scrollTo(0, 0); 
+  }, []);
   return (
     <ThemeProvider theme={darkTheme}>
       <BrowserRouter>
@@ -53,6 +58,7 @@ function App() {
               <Contact />
             </Wrapper>
             <Footer />
+            <ScrollToTop />
           </div>
         </Body>
       </BrowserRouter>

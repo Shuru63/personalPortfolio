@@ -27,12 +27,13 @@ const NavbarContainer = styled.div`
   font-size: 1rem;
 `;
 const NavLogo = styled(LinkR)`
-  width: 80%;
+    width: 80%;
   padding: 0 6px;
   font-weight: 700;
   font-size: 24px;
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
 `;
 
 const NavItems = styled.ul`
@@ -130,10 +131,16 @@ const MobileMenu = styled.ul`
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const theme = useTheme();
+  const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth", 
+  });
+};
   return (
     <Nav>
       <NavbarContainer>
-        <NavLogo to="/">Shubham</NavLogo>
+      <NavLogo onClick={scrollToTop}>Shubham</NavLogo>
 
         <MobileIcon onClick={() => setIsOpen(!isOpen)}>
           <MenuRounded style={{ color: "inherit" }} />
@@ -145,6 +152,7 @@ const Navbar = () => {
           <NavLink href="#Experience">Experience</NavLink>
           <NavLink href="#Projects">Projects</NavLink>
           <NavLink href="#Education">Education</NavLink>
+          <NavLink href="#contact">Contact</NavLink>
         </NavItems>
 
         {isOpen && (
@@ -163,6 +171,9 @@ const Navbar = () => {
             </NavLink>
             <NavLink onClick={() => setIsOpen(!isOpen)} href="#Education">
               Education
+            </NavLink>
+            <NavLink onClick={() => setIsOpen(!isOpen)} href="#contact">
+            Contact
             </NavLink>
             <GithubButton
               href={Bio.github}

@@ -72,7 +72,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact-container" id="Education">
+    <div className="contact-container" id="contact">
        <CModal
         visible={visible}
         onClose={handleModalClose}
