@@ -12,6 +12,11 @@ import company_poster from "../images/sirusselestemp.jpg"
 import launch_poster from "../images/launch.jpg"
 import college_poster from "../images/clgtemp.jpg"
 import website_ui from "../images/jobportal.jpg"
+import TourTravel from "../images/Tawheed app-qugbOTGb.png"
+import Crm from "../images/HajjCrm-CNdq_YYc.png"
+import Camsense from "../images/Camsense-D4uXniVq.png"
+import Education from "../images/Nile-E87SdasE.png"
+import  Saumata from "../images/logo-Bu19vttk.png"
 export const Bio = {
   name: "Shubham kumar garg",
   roles: [
@@ -27,7 +32,7 @@ export const Bio = {
   github: "https://github.com/Shuru63",
   linkedin:"https://www.linkedin.com/in/shubham-kumar-garg-b5a9bb234/",
   resume:
-    "https://drive.google.com/file/d/19zCiu2SgZhKhUak055QWXoaZQ4TeBpa2/view?usp=drive_link",
+    "https://drive.google.com/file/d/19cuJxyu74dqlcqNxjKRkvwzg_mNbvtQX/view?usp=sharing",
   linkedinLink: "https://www.linkedin.com/in/shubham-kumar-garg-b5a9bb234/",
   twitter: "https://x.com/Shubham92633620?s=08",
   insta: "https://www.instagram.com/",
@@ -175,6 +180,26 @@ export const skills = [
 export const experiences = [
   {
     id: 0,
+    img: Saumata, // add your company logo import here
+    role: "Full Stack Developer",
+    company: "Saumata Technology",
+    date: "Dec 2024 - Present",
+    desc: "Working as a Full Stack Developer, handling both frontend and backend development while also managing cloud deployment and server optimization. Deployed scalable applications on AWS, configured Nginx & Gunicorn for performance, and ensured smooth CI/CD pipelines. Enhanced application stability, reduced downtime by 35%, and optimized resource utilization, resulting in improved client satisfaction and faster delivery cycles.",
+    skills: [
+      "ReactJS",
+      "Next.js",
+      "Node.js",
+      "Django",
+      "MongoDB",
+      "AWS",
+      "Nginx",
+      "Docker",
+      "CI/CD",
+    ],
+    doc: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/saumata_doc.jpeg?alt=media&token=placeholder",
+  },
+  {
+    id: 1,
     img: sarve,
     role: "Full Stack Developer",
     company: "SARVA SUVIDHEAN Private Limited",
@@ -192,7 +217,7 @@ export const experiences = [
     doc: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/sarvasuvidhean_doc.jpeg?alt=media&token=placeholder",
   },
   {
-    id: 1,
+    id: 2,
     img: sirus,
     role: "Frontend Engineer",
     company: "SIRUSAI Private Limited",
@@ -239,9 +264,54 @@ export const education = [
   },
 ];
 
+
 export const projects = [
   {
     id: 1,
+    title: "Tour & Travel Web App",
+    date: " ",
+    description:
+      "A comprehensive travel booking platform enabling users to book Hajj, Umrah, and other tours with ease. Features include dynamic package management, secure payment gateways, and responsive design for smooth booking experience.",
+    image: TourTravel,
+    tags: ["MERN", "AWS", "Travel Booking"],
+    category: "web app",
+    github: "https://tawheedumrah.com/",
+  },
+  {
+    id: 2,
+    title: "Hajj CRM System",
+    date: " ",
+    description:
+      "A dedicated CRM solution for Hajj and Umrah service providers. Helps manage customer data, bookings, and communication in a structured way to improve client experience.",
+    image: Crm,
+    tags: ["Django", "React", "CRM", "AWS"],
+    category: "web app",
+    github: "http://crm.hajumrahservice.com/",
+  },
+  {
+    id: 3,
+    title: "Camsense Web App",
+    date: " ",
+    description:
+      "An AI-powered monitoring and analytics platform providing insights through camera feeds. Built to support industries with real-time monitoring, detection, and reporting features.",
+    image: Camsense,
+    tags: ["React", "AI", "Analytics", "AWS"],
+    category: "AI application",
+    github: "https://camsenseindia.com/",
+  },
+  {
+    id: 4,
+    title: "Nile Education Platform",
+    date: " ",
+    description:
+      "An online education platform designed for personalized learning, live classes, and student performance tracking. Built with scalable architecture for better accessibility.",
+    image: Education,
+    tags: ["MERN", "EdTech", "AWS"],
+    category: "web app",
+    github: "https://nileedu.in/index.html",
+  },
+  {
+    id: 5,
     title: "Railway Cleaning Rating Web App",
     date: " ",
     description:
@@ -252,18 +322,18 @@ export const projects = [
     github: "https://github.com/Shuru63/RailwayRating.git",
   },
   {
-    id: 2,
+    id: 6,
     title: "Face Recognition Attendance System",
     date: " ",
     description:
       "An AI-powered face recognition system for attendance, built using React, Django, Machine Learning, and AWS. Enhances accuracy and reduces manual intervention in attendance tracking.",
-    image: face, // Replace with the actual image URL if available
+    image: face,
     tags: ["React", "Django", "AI", "Machine Learning", "AWS"],
     category: "AI application",
     github: "https://github.com/Shuru63",
   },
   {
-    id: 3,
+    id: 7,
     title: "JobPortal Web App",
     date: " ",
     description:
@@ -274,7 +344,7 @@ export const projects = [
     github: "https://github.com/Shuru63/DoctorJob",
   },
   {
-    id: 4,
+    id: 8,
     title: "Ecommerce Web App",
     date: " ",
     description:
@@ -282,10 +352,10 @@ export const projects = [
     image: ecco, 
     tags: ["React", "Django", "AWS", "Ecommerce"],
     category: "web app",
-    github: "https://github.com/Shuru63/Chat_box.git",
+    github: "https://renewfystore.com/",
   },
   {
-    id: 5,
+    id: 9,
     title: "ChatKaro Web App",
     date: " ",
     description:
@@ -296,45 +366,45 @@ export const projects = [
     github: "https://github.com/Shuru63/Chat_box.git",
   },
   {
-    id: 6,
+    id: 10,
     title: "Company Branding Poster",
     date: " ",
     description:
       "A professional branding poster created to showcase the company's identity, featuring its logo, tagline, and core values. Designed with Canva and Adobe Photoshop for a clean and corporate look.",
-    image: company_poster, // Replace with actual image URL
+    image: company_poster, 
     tags: ["Canva", "Adobe Photoshop", "Branding"],
     category: "UI/UX Design",
     github: "https://www.linkedin.com/posts/shubham-kumar-garg-b5a9bb234_showandgolaunch-facialrecognition-techrevolution-activity-7119126954078855168-HT28?utm_source=share&utm_medium=member_desktop",
   },
   {
-    id: 7,
+    id: 11,
     title: "Product Launch Poster",
     date: " ",
     description:
       "An eye-catching promotional poster for a product launch event. Designed with a focus on vibrant colors, typography, and impactful visuals using Figma and Adobe Illustrator.",
-    image: launch_poster, // Replace with actual image URL
+    image: launch_poster, 
     tags: ["Figma", "Adobe Illustrator", "Marketing"],
     category: "UI/UX Design",
     github: "https://www.linkedin.com/posts/shubham-kumar-garg-b5a9bb234_showandgo-sirusai-aitech-activity-7110519098588995584-COt5?utm_source=share&utm_medium=member_desktop",
   },
   {
-    id: 8,
-    title: "College  Poster",
+    id: 12,
+    title: "College Poster",
     date: " ",
     description:
       "A vibrant and engaging poster created for a college event. Designed to capture the attention of students with bold colors, creative layouts, and playful typography using Canva and Adobe Photoshop.",
-    image: college_poster, // Replace with actual image URL
+    image: college_poster, 
     tags: ["Canva", "Adobe Photoshop", "Event"],
     category: "UI/UX Design",
     github: "https://www.linkedin.com/posts/shubham-kumar-garg-b5a9bb234_graficdesign-demi-graphicdesign-activity-6926937939629195265-pow3?utm_source=share&utm_medium=member_desktop",
   },
   {
-    id: 9,
+    id: 13,
     title: "Website UI Design",
     date: " ",
     description:
       "A modern and user-friendly website interface designed for a seamless user experience. Built using Figma and Adobe XD with a focus on responsive design, usability, and accessibility.",
-    image: website_ui, // Replace with actual image URL
+    image: website_ui, 
     tags: ["Figma", "Adobe XD", "UI/UX"],
     category: "UI/UX Design",
     github: "https://github.com/Shuru63",
